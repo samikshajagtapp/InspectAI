@@ -1,0 +1,13 @@
+# Core Deep Learning & Computer Vision Dependencies for Pharmaceutical Bottle Anomaly Detection
+anomalib>=1.0.0
+torch
+torchvision
+lightning
+timm
+opencv-python
+matplotlib
+numpy
+pandas
+pillow
+scikit-learn
+jupyter

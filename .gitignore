@@ -1,0 +1,37 @@
+# Environments & Virtualenv
+.venv/
+env/
+venv/
+ENV/
+
+# Python Cache & Compiled Files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# macOS System Files
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Jupyter Notebook Checkpoints
+.ipynb_checkpoints/
+
+# Project Generated Model Artifacts & Outputs
+outputs/
+models/*.ckpt
+models/*.pth
+models/*.pt
+!models/.gitkeep
+
+# Frontend Node & Build Files
+node_modules/
+frontend/node_modules/
+frontend/dist/
+
+# IDE & Editor Settings
+.vscode/
+.idea/
+*.swp
+mvtec_dataset/
