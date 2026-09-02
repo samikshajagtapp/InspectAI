@@ -95,7 +95,7 @@ def evaluate_model(checkpoint_path: Path = CHECKPOINT_PATH):
             model = Patchcore(backbone=BACKBONE, layers=FEATURE_LAYERS)
         except Exception:
             model = Patchcore(backbone=BACKBONE)
-        ckpt = torch.load(checkpoint_path, map_location="cpu")
+        ckpt = torch.load(checkpoint_path, map_location="cpu", weights_only=False)
         state_dict = ckpt.get("state_dict", ckpt)
         model.load_state_dict(state_dict, strict=False)
 

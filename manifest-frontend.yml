@@ -1,0 +1,9 @@
+---
+applications:
+  - name: inspect-ai-frontend
+    memory: 64M
+    disk_quota: 128M
+    buildpacks:
+      - staticfile_buildpack
+    path: ./frontend/dist
+    random-route: true

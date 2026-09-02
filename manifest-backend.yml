@@ -1,0 +1,10 @@
+---
+applications:
+  - name: inspect-ai-backend
+    memory: 4G
+    disk_quota: 4G
+    buildpacks:
+      - python_buildpack
+    command: gunicorn app:app --timeout 120
+    routes:
+      - route: inspect-ai-backend-pharmacy-app.cfapps.eu10-005.hana.ondemand.com
